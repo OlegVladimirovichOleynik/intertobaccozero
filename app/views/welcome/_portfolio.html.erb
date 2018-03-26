@@ -1,0 +1,84 @@
+<div class="portfolio">
+  <div class="portfolio-top">
+    <div class="col-md-8">
+      <div class="portfolio-top-left wow fadeInLeft" data-wow-delay="0.4s">
+        <h3><%= t(:line) %></h3>
+        <p><h4><%= t(:lineinfo) %></h4></p><br>
+        <p><h4><%= t(:lineinfo2) %></h4></p>
+      </div>
+    </div>
+    <div class="col-md-4 portfolio-top-right-inner wow fadeInRight" data-wow-delay="0.4s">
+      <div class="portfolio-top-right">
+
+      </div>
+    </div>
+    <div class="clearfix"> </div>
+    <br><br><br><br>
+    <!---- portfolio-works ---->
+    <div id="tastes" class="tastes">
+      <div class="tm-head">
+      <h3><%= t(:tastes) %></h3>
+      <p><%= t(:title2) %></p><br>
+    </div>
+      <div class="portfolio-works">
+      <div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+        <div class="portfolio-work-grid-pic">
+          <%= image_tag("tastes/p1.png")%>
+        </div>
+        <div class="portfolio-work-grid-caption">
+          <h4>Pink Panter</h4>
+          <p><%= t(:t1) %></p>
+        </div>
+      </div>
+      <div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+        <div class="portfolio-work-grid-pic">
+          <%= image_tag("tastes/p2.png")%>
+        </div>
+        <div class="portfolio-work-grid-caption">
+          <h4>Durian</h4>
+          <p><%= t(:t2) %></p>
+        </div>
+      </div>
+      <div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+        <div class="portfolio-work-grid-pic">
+          <%= image_tag("tastes/p3.png")%>
+        </div>
+        <div class="portfolio-work-grid-caption">
+          <h4>Rose</h4>
+          <p><%= t(:t3) %></p>
+        </div>
+      </div>
+      <div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+        <div class="portfolio-work-grid-pic">
+          <%= image_tag("tastes/p4.png")%>
+        </div>
+        <div class="portfolio-work-grid-caption">
+          <h4>Elki Palki</h4>
+          <p><%= t(:t4) %></p>
+        </div>
+      </div>
+      <div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+        <div class="portfolio-work-grid-pic">
+          <%= image_tag("tastes/p5.png")%>
+        </div>
+        <div class="portfolio-work-grid-caption">
+          <h4>Winnie Pooh</h4>
+          <p><%= t(:t5) %></p>
+        </div>
+      </div>
+      <div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+        <div class="portfolio-work-grid-pic">
+          <%= image_tag("tastes/p6.png")%>
+        </div>
+        <div class="portfolio-work-grid-caption">
+          <h4>Galaxy </h4>
+          <p><%= t(:t6) %></p>
+        </div>
+      </div>
+      <div class="clearfix"> </div><br>
+      <center><%= link_to t(:alltastes), tastes_index_path(@tastes, anchor: "tastes", :locale => I18n.locale), :class => "leran-more" %></center>
+    </div>
+  </div>
+    <!---- portfolio-works ---->
+  </div>
+</div>
