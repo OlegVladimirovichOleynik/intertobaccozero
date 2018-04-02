@@ -338,6 +338,12 @@ nav a#pull {
 	width: 50%;
 }
 /*---- services ----*/
+.touching {
+  color: yellow;
+  background-color: red;
+  font-size: 24px;
+  text-align: center;
+}
 .services{
 	padding:3em 0;
 }
