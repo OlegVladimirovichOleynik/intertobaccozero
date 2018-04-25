@@ -7,7 +7,7 @@ $(document).ready(function(){
     }
 
     function pp_show(pp, bg, btn){
-        pp.animate({top: "150px"}, 2000);
+        pp.animate({top: "30px"}, 2000);
         bg.fadeIn(1000).click(function(){pp_hide(pp, bg)});
     }
 

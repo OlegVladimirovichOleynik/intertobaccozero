@@ -16,43 +16,19 @@
   width: 100px;
 }
 
-#pp .pp-header, #pp .pp-footer{
-    padding: 10px;
-    background: #3D9970;
-    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.2);
+#pp .modal-footer {
+  margin-top: -5px;
 }
 
-#pp .pp-header h3{
-    margin:0;
-    font: normal 1.7em/1.3 Verdana;
-    color: #fff;
-    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.7);
-    text-align: center;
+#pp .modal-body {
+  position: relative;
+  padding: 10px;
 }
 
-#pp .pp-content{ background: #fff; padding: 20px 10px;}
-#pp .pp-content-main{
-    width: 340px;
-    padding: 0 0 10px 10px;
-    margin-right: 10px;
-    display: inline-block;
-    vertical-align: top;
+#pp .modal-header {
+  height: 145px;
+  padding: 0px;
 }
-
-#pp .pp-content-main ul,
-#pp .pp-content-main h4 {padding-left: 0; margin: 0;}
-#pp .pp-content-main h4 { font-size: 18px; margin:0 0 5px 20px;}
-#pp .pp-content-main li {list-style: none;}
-#pp .pp-content-main li i {margin-right: 5px;}
-#pp .pp-content-sidebar{
-    width: 170px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-#pp .pp-content-sidebar i {font-size: 184px; color: #036;}
-#pp .pp-footer { background: #EAEAEC; }
-
 
 #pp-bg {
     position: fixed;
@@ -88,6 +64,18 @@
   #pp img {
     width: 100px;
     }
+  #pp .modal-footer {
+    margin-top: 15px;
+  }
+
+  #pp .modal-body {
+    position: relative;
+    padding: 20px;
+  }
+
+  #pp .modal-header {
+    height: auto;;
+  }
 	}
 
 @media (max-width:640px){
