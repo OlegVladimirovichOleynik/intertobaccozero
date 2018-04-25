@@ -60,3 +60,9 @@ en:
   notice: "Congratulations, you have our product!"
   error: "Looks like you have a fake!"
   entercode: "Enter a code"
+
+  agetitle: "Are you 18+?"
+  agetext: "This website is intended for a limited number of people, namely for adult consumers of tobacco products (citizens over 18) to provide them with reliable information about the main consumer properties and quality characteristics of tobacco products."
+  agetext2: "Persons who are under the age of majority are not allowed to use the website."
+  ageyes: "Yes"
+  ageno: "No"

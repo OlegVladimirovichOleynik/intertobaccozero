@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery.min
+//= require agescript.js
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
