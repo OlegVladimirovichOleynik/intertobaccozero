@@ -4,7 +4,7 @@
         <h2><%= t(:titlecipher) %></h2>
         <h3><%= t(:titlecipher2) %></h3>
         <div class="row">
-        <%= form_for :cipher, url: { action: 'check_cipher', controller: 'tobacco_cipher' }, remote: true do |f| %>
+        <%= form_for :cipher, url: { action: 'test_cipher', controller: 'tobacco_cipher'}, remote: true do |f| %>
           <%= f.text_field :cipher, required: true, placeholder: t(:entercode),  value: '' %>
           <%= f.submit t(:check) %>
         <% end %>
