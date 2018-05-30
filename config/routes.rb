@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     resources :tobacco_cipher do
       post 'test_cipher', on: :collection
     end
+    resources :contacts
     get 'welcome/index'
     get 'tastes/index'
     root 'welcome#index'

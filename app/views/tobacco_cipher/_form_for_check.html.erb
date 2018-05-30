@@ -1,26 +1,22 @@
-<div class="form_for_check">
-  <center>
-    <div class="agileits_w3layouts_banner_info">
-        <h2><%= t(:titlecipher) %></h2>
-        <h3><%= t(:titlecipher2) %></h3>
-        <div class="row">
-        <%= form_for :cipher, url: { action: 'test_cipher', controller: 'tobacco_cipher'}, remote: true do |f| %>
-          <%= f.text_field :cipher, required: true, placeholder: t(:entercode),  value: '' %>
-          <%= f.submit t(:check) %>
-        <% end %>
-      </div>
-    </div>
-  </center><br><br><br>
-  <center>
-  <% if flash[:notice] %>
-    <div class="alert alert-success" role="alert">
-      <%= flash[:notice] %>
-    </div>
-  <% end %>
-  <% if flash[:error] %>
-    <div class="alert alert-danger" role="alert">
-      <%= flash[:error] %>
-    </div>
-  <% end %>
-  </center>
-</div>
+<div class="agileits_w3layouts_banner_info">
+    <h2><%= t(:titlecipher) %></h2>
+    <h3><%= t(:titlecipher2) %></h3>
+    <div class="row">
+    <%= form_for :cipher, url: { action: 'test_cipher', controller: 'tobacco_cipher'}, remote: true do |f| %>
+      <%= f.text_field :cipher, required: true, placeholder: t(:entercode),  value: '' %>
+      <%= f.submit t(:check) %>
+    <% end %>
+  </div>
+</div><br><br><br>
+<center>
+<% if flash[:notice] %>
+  <div class="alert alert-success" role="alert">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+<% if flash[:error] %>
+  <div class="alert alert-danger" role="alert">
+    <%= flash[:error] %>
+  </div>
+<% end %>
+</center>

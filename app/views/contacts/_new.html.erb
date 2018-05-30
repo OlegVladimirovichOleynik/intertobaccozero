@@ -1,0 +1,27 @@
+<div id="contacts">
+  <div class="contacts_w3layouts_banner_info">
+    <h2><%= t(:titlecontacts) %></h2>
+    <h3><%= t(:titlecontacts2) %></h3>
+    <div class="row">
+      <center>
+      <%= form_for :contacts, url: { action: 'create', controller: 'contacts'}, remote: true do |f| %>
+        <%= f.text_field :name, required: true, placeholder: t(:name),  value: '' %>
+        <%= f.text_field :email, required: true, placeholder: t(:email),  value: '' %>
+        <%= f.text_field :message, placeholder: t(:message),  value: '' %>
+        <%= f.submit t(:submit) %>
+      <% end %>
+    </div>
+  </div>
+  <center>
+  <% if flash[:yeap] %>
+    <div class="alert alert-success" role="alert">
+      <%= flash[:yeap] %>
+    </div>
+  <% end %>
+  <% if flash[:nott] %>
+    <div class="alert alert-danger" role="alert">
+      <%= flash[:nott] %>
+    </div>
+  <% end %>
+  </center>
+</div>

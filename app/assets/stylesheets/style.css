@@ -67,6 +67,62 @@ body a{
 	right:7%;
 }
 
+
+/*-----start-contacts form----*/
+.contacts_w3layouts_banner_info{
+	width:80%;
+	margin:0 auto;
+	text-align:center;
+}
+.contacts_w3layouts_banner_info form{
+  display: grid;
+}
+
+.contacts_w3layouts_banner_info h2{
+	color: yellow;
+  font-size: 200%;
+}
+.contacts_w3layouts_banner_info h3{
+	font-size:1em;
+	color: #fff;
+	line-height:2em;
+}
+
+.contacts_w3layouts_banner_info input{
+	outline: none;
+    width: 78%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.33);
+    color: #212121;
+    border: 1px solid #a5a5a5;
+    font-size: 14px;
+    float: left;
+	letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.contacts_w3layouts_banner_info input{
+	color:#212121;
+}
+
+.contacts_w3layouts_banner_info input{
+	outline: groove;
+    width: 75%;
+    padding: 15px 0;
+    background: #fddd22;
+    color: #212121;
+    border: 1px solid #fddd22;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.contacts_w3layouts_banner_info input[type="submit"]:hover{
+	background:#0accff;
+	border-color:#0accff;
+}
+/*-----finish-contacts form----*/
+
 .agileits_w3layouts_banner_info{
 	width:80%;
 	margin:0 auto;
@@ -155,6 +211,9 @@ body a{
   }
   .front img{
     display: none;
+  }
+  .contacts_w3layouts_banner_info input{
+    width: 100%;
   }
 }
 

@@ -14,7 +14,7 @@ class TobaccoCipherController < ApplicationController
     else
       flash[:error] = t(:error)
     end
-    redirect_to root_url
+    redirect_to root_url(anchor: 'services')
   end
 
   private

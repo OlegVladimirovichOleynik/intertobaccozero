@@ -61,6 +61,15 @@ en:
   error: "Looks like you have a fake!"
   entercode: "Enter a code"
 
+  yeap: "Your application has been sent, we will get back to you shortly!"
+  nott: "Looks like you made a mistake somewhere!"
+  name: "Enter your name"
+  email: "Enter your email or phone"
+  message: "Enter the message"
+  submit: "Submit"
+  titlecontacts: "Feedback"
+  titlecontacts2: "Leave your email or phone number and we will contact you)"
+
   agetitle: "Are you 18+?"
   agetext: "This website is intended for a limited number of people, namely for adult consumers of tobacco products (citizens over 18) to provide them with reliable information about the main consumer properties and quality characteristics of tobacco products."
   agetext2: "Persons who are under the age of majority are not allowed to use the website."
