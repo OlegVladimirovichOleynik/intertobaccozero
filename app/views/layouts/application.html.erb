@@ -80,27 +80,30 @@
     </div>
     <div id="pp-bg"></div>
     <div class="bg">
-			<div id="home" class="header wow bounceInDown" data-wow-delay="0.4s">
+      <div id="home" class="header wow bounceInDown" data-wow-delay="0.4s">
 					<div class="top-header">
 						<div class="container">
-						<div class="logo">
-							<%= image_tag("logo.png")%>
-						</div>
-						 <nav class="top-nav">
-							<ul class="top-nav">
-								<li class="active"><%= link_to t(:tobacco), welcome_index_path(@welcome, anchor: "services", :locale => I18n.locale) %></li>
-								<li><%= link_to t(:tastes), welcome_index_path(@welcome, anchor: "tastes", :locale => I18n.locale ) %></li>
-								<li><%= link_to t(:about), welcome_index_path(@welcome, anchor: "port", :locale => I18n.locale) %></li>
-                <li><%= link_to image_tag("ru.png", :border => 0, :alt => '', :width => 30, :height => 20, :title => ''), { locale: :ru } %></li>
-                <li><%= link_to image_tag("en.png", :border => 0, :alt => '', :width => 40, :height => 30, :title => ''), { locale: :en } %></li>
-
-							</ul>
-							<a href="#" id="pull"><%= image_tag("menu-icon.png")%></a>
-						</nav>
+						<div class="logo"><%= image_tag("logo.png")%></div>
+            <nav class="top-nav">
+              <ul class="top-nav">
+                <% if current_page?(welcome_index_path) %>
+                  <li class="active"><a href="#services" class="scroll"><%= t(:tobacco) %></a></li>
+                  <li><a href="#tastes" class="scroll"><%= t(:tastes) %></a></li>
+                  <li><a href="#port" class="scroll"><%= t(:about) %></a></li>
+                <% else %>
+                  <li class="active"><%= link_to t(:tobacco), welcome_index_path(@welcome, anchor: "services", :locale => I18n.locale) %></li>
+                  <li><%= link_to t(:tastes), welcome_index_path(@welcome, anchor: "tastes", :locale => I18n.locale ) %></li>
+                  <li><%= link_to t(:about), welcome_index_path(@welcome, anchor: "port", :locale => I18n.locale) %></li>
+                <% end %>
+                  <li><%= link_to image_tag("ru.png", :border => 0, :alt => '', :width => 30, :height => 20, :title => ''), { locale: :ru } %></li>
+                  <li><%= link_to image_tag("en.png", :border => 0, :alt => '', :width => 40, :height => 30, :title => ''), { locale: :en } %></li>
+              </ul>
+              <a href="#" id="pull"><%= image_tag("menu-icon.png")%></a>
+            </nav>
 						<div class="clearfix"></div>
 					</div>
 				</div>
-			</div>
+      </div>
       <%= render 'welcome/banner' %>
       <div class="social-tab">
         <div class="social">
@@ -127,6 +130,18 @@
               }
           });
       });
+    </script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+      });
+    </script>
+    <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+      function hideURLbar(){ window.scrollTo(0,1); }
     </script>
   </body>
 </html>
