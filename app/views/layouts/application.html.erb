@@ -83,7 +83,7 @@
       <div id="home" class="header wow bounceInDown" data-wow-delay="0.4s">
 					<div class="top-header">
 						<div class="container">
-						<div class="logo"><%= image_tag("logo.png")%></div>
+						<div class="logo"><%= link_to image_tag("logo.png"),welcome_index_path(@welcome, :locale =>I18n.locale) %></div>
             <nav class="top-nav">
               <ul class="top-nav">
                 <% if current_page?(welcome_index_path) %>
