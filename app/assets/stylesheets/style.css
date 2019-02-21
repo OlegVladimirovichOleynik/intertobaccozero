@@ -1063,7 +1063,7 @@ a.leran-more:hover{
 	padding:1.5em 20px;
 	font-weight:300;
 	font-family: 'Open Sans', sans-serif;
-	margin-top:5em;
+	margin-top:0em;
 }
 .copy-right p a{
 	color:#35C2F8;
@@ -1258,6 +1258,10 @@ a.leran-more:hover{
   h4,
   .h4 {
     font-size: 12px;
+  }
+  h5,
+  .h5 {
+    font-size: 24px;
   }
 	.portfolio-work-grid-caption {
 		padding: 2.4em 1em 0em 1em;
@@ -1482,9 +1486,9 @@ a.leran-more:hover{
 		font-size: 2.2em;
 	}
 	.copy-right p{
-		padding:1.5em 0 1.2em;
-		margin-top:1em;
-    margin-left: 19px;
+		padding:0.5em 0 0.2em;
+		margin-top:0em;
+    margin-left: 0px;
 	}
 	.contact-right input[type="text"], .contact-right textarea,.contact-right input[type="submit"]{
 		-webkit-appearance:none;

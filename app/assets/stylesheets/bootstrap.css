@@ -335,8 +335,8 @@ img {
   border-radius: 50%;
 }
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   border: 0;
   border-top: 1px solid none;
 }
@@ -460,7 +460,7 @@ h4,
 }
 h5,
 .h5 {
-  font-size: 14px;
+  font-size: 24px;
 }
 h6,
 .h6 {
