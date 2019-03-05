@@ -28,6 +28,17 @@ body a{
     margin:7em auto 5em;
     width: 31%;
 }
+/*-----start-welcomlink----*/
+.welcomlink p {
+  color: white;
+  position: fixed;
+  z-index: 999999;
+  font-size: 30px;
+}
+.welcomlink a{
+  color: white;
+}
+/*-----end-welcomlink----*/
 
 .w3_agileits_logo h1 a{
 	font-size: 2em;
